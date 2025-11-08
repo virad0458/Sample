@@ -4,11 +4,15 @@
     <form @submit.prevent="loginUser">
       <input type="email" v-model="email" placeholder="Email" required />
       <input type="password" v-model="password" placeholder="Password" required />
+      <p>
+        <router-link to="/forgot-password">Forgot your password?</router-link>
+      </p>
       <button type="submit">Login</button>
     </form>
     <p>Don’t have an account? <router-link to="/signup">Sign up</router-link></p>
   </div>
 </template>
+
 
 <script>
 export default {
